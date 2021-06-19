@@ -20,8 +20,8 @@ for user in users:
         print(user, i, imgname, '*'*20)
 
         img_path = os.path.join(cwd, "img all", user, imgname)
-        resize_path = os.path.join(cwd, "img resize", '100', user, imgname)
+        resize_path = os.path.join(cwd, "img resize", user, imgname)
 
-        result = misc.tf_resize(img_path, resize_path, max_side = 100)
+        result = misc.tf_resize(img_path, resize_path, max_side = 400)
         print(result)
 
